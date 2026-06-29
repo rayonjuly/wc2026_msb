@@ -45,10 +45,7 @@ else:
 #     return [bg_color] * len(row)
 
 dynamic_height = min(len(display_df) * 35 + 40, 1000) 
-display_df = display_df.style.set_properties(
-    subset=['total_score','score_1', 'score_2', 'score_3', 'score_4'], 
-    **{'font-weight': 'bold'}
-)
+
 
 display_df = display_df.rename({
     'rank': 'Vị trí'
@@ -68,6 +65,11 @@ display_df = display_df.rename({
     ,'round_4': 'Vị trí team 4'
     ,'score_4': 'Điểm team 4'
 }, axis=1)
+
+display_df = display_df.style.set_properties(
+    subset=['Tổng điểm','Điểm team 1', 'Điểm team 2', 'Điểm team 3', 'Điểm team 4'], 
+    **{'font-weight': 'bold'}
+)
 
 st.dataframe(display_df, use_container_width=True, hide_index=True, height=dynamic_height)
 
