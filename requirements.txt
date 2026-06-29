@@ -1,7 +1,6 @@
 streamlit
 pandas
 seaborn
-re
 unidecode
-yaml
+PyYAML
 matplotlib
