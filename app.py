@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="WC 2026 Predictor", layout="wide")
-st.title("🏆 World Cup 2026 Predictor")
+st.set_page_config(page_title="WC 2026 Ticket Standing", layout="wide")
+st.title("🏆 Bảng xếp hạng dự đoán WC 2026")
 
-tab_leaderboard, tab_bracket = st.tabs(["📊 Leaderboard", "🏟️ Bracket"])
+tab_leaderboard, tab_bracket = st.tabs(["📊 Bảng xếp hạng", "🏟️ Nhánh đấu"])
 
 with tab_leaderboard:
     # st.subheader("Bảng xếp hạng chính thức tính đến 10h00 ngày 2026-06-25")
