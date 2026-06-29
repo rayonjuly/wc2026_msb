@@ -18,7 +18,7 @@ with tab_leaderboard:
     dropdown_options = ['All Teams'] + dim_team
     selected_team = st.selectbox('Filter by Team:', dropdown_options)
 
-    df = pd.read_csv(r"standing.csv")
+    df = pd.read_csv(r"standing.csv").dropna(how='all')
 
     if selected_team != "All Teams":
         # Create a filter mask that checks if the selected team is in ANY of the 4 columns
