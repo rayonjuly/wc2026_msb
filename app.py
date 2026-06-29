@@ -34,6 +34,10 @@ with tab_leaderboard:
         display_df = df
     
     dynamic_height = min(len(display_df) * 35 + 40, 1000) 
+    display_df = display_df.style.set_properties(
+        subset=['total_score','score_1', 'score_2', 'score_3', 'score_4'], 
+        **{'font-weight': 'bold'}
+    )
 
     st.dataframe(display_df, use_container_width=True, hide_index=True, height=dynamic_height)
 
