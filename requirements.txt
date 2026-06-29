@@ -1,0 +1,7 @@
+streamlit
+pandas
+seaborn
+re
+unidecode
+yaml
+matplotlib
