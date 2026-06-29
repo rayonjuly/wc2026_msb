@@ -37,6 +37,8 @@ else:
     display_df = df
 
 
+
+
 # def style_rows(row):
 #     # Apply a light gray/blue background for even rows, white for odd rows
 #     bg_color = 'background-color: #f8fafc;' if row.name % 2 == 0 else 'background-color: #ffffff;'
@@ -47,6 +49,25 @@ display_df = display_df.style.set_properties(
     subset=['total_score','score_1', 'score_2', 'score_3', 'score_4'], 
     **{'font-weight': 'bold'}
 )
+
+display_df = display_df.rename({
+    'rank': 'Vị trí'
+    ,'ticket': 'Vé'
+    ,'total_score': 'Tổng điểm'
+    ,'pot_selected': 'Các nhóm hạt giống'
+    ,'team_1': 'Team 1'
+    ,'round_1': 'Vị trí team 1'
+    ,'score_1': 'Điểm team 1'
+    ,'team_2': 'Team 2'
+    ,'round_2': 'Vị trí team 2'
+    ,'score_2': 'Điểm team 2'
+    ,'team_3': 'Team 3'
+    ,'round_3': 'Vị trí team 3'
+    ,'score_3': 'Điểm team 3'
+    ,'team_4': 'Team 4'
+    ,'round_4': 'Vị trí team 4'
+    ,'score_4': 'Điểm team 4'
+}, axis=1)
 
 st.dataframe(display_df, use_container_width=True, hide_index=True, height=dynamic_height)
 
