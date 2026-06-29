@@ -36,9 +36,6 @@ with tab_leaderboard:
     dynamic_height = min(len(display_df) * 35 + 40, 1000) 
 
     st.dataframe(display_df, use_container_width=True, hide_index=True, height=dynamic_height)
-    # Display the entire dataframe
-    # use_container_width=True makes it stretch across the screen
-    st.dataframe(display_df, use_container_width=True, hide_index=True, height=dynamic_height)
 
     
     # st.caption("Lưu ý: Việc xếp hạng mới tính trên tổng điểm, chưa tính đến các chỉ số phụ. Có thể thay đổi phụ thuộc vào d/s các đội vào vòng 32_team")
