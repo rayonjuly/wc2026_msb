@@ -15,7 +15,7 @@ with tab_leaderboard:
     df_dim_team = pd.read_csv('dim_team.csv')
     dim_team = df_dim_team['team'].tolist()
 
-    dropdown_options = ['All Teams'] + dim_team
+    dropdown_options = ['Tất cả'] + dim_team
     selected_team = st.selectbox('Lọc theo đội:', dropdown_options)
 
     df = pd.read_csv(r"standing.csv").dropna(how='all')
