@@ -35,7 +35,7 @@ with tab_leaderboard:
     
     # Display the entire dataframe
     # use_container_width=True makes it stretch across the screen
-    st.dataframe(display_df, use_container_width=True, hide_index=True, height=950)
+    st.dataframe(display_df, use_container_width=True, hide_index=True, height=920)
 
     
     # st.caption("Lưu ý: Việc xếp hạng mới tính trên tổng điểm, chưa tính đến các chỉ số phụ. Có thể thay đổi phụ thuộc vào d/s các đội vào vòng 32_team")
