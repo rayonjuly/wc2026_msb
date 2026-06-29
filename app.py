@@ -34,13 +34,13 @@ with tab_leaderboard:
         display_df = df
     
 
-    def style_rows(row):
-        # Apply a light gray/blue background for even rows, white for odd rows
-        bg_color = 'background-color: #f8fafc;' if row.name % 2 == 0 else 'background-color: #ffffff;'
-        return [bg_color] * len(row)
+    # def style_rows(row):
+    #     # Apply a light gray/blue background for even rows, white for odd rows
+    #     bg_color = 'background-color: #f8fafc;' if row.name % 2 == 0 else 'background-color: #ffffff;'
+    #     return [bg_color] * len(row)
     
     dynamic_height = min(len(display_df) * 35 + 40, 1000) 
-    display_df = display_df.style.apply(style_rows, axis=1).set_properties(
+    display_df = display_df.style.set_properties(
         subset=['total_score','score_1', 'score_2', 'score_3', 'score_4'], 
         **{'font-weight': 'bold'}
     )
