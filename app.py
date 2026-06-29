@@ -22,10 +22,10 @@ with tab_leaderboard:
 
     if selected_team != "All Teams":
         # Create a filter mask that checks if the selected team is in ANY of the 4 columns
-        mask = (df['team_1'] == selected_team) | \
-                (df['team_2'] == selected_team) | \
-                (df['team_3'] == selected_team) | \
-                (df['team_4'] == selected_team)
+        mask = (df['team_1'].str.contains(selected_team)) | \
+                (df['team_2'].str.contains(selected_team)) | \
+                (df['team_3'].str.contains(selected_team)) | \
+                (df['team_4'].str.contains(selected_team))
         
         # Apply the mask to get the filtered data
         display_df = df[mask]
