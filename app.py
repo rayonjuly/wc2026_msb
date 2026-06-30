@@ -15,13 +15,42 @@ st.caption("Cập nhật đến sau trận đấu Germany - Paraguay")
     # Load the full dataset from your CSV file
     # Make sure 'leaderboard_data.csv' is saved in the same folder as this Python script
 
+df = pd.read_csv(r"standing.csv").dropna(how='all')
+
+df_fact_current_round = pd.read_csv(r'..\..\wc2026\data\fact_current_round.csv')
+status_dict = dict(zip(df_fact_current_round['team'], df_fact_current_round['active_status']))
+
+def highlight_team_status(team_string):
+    if pd.isna(team_string):
+        return ''
+        
+    # THE FIX: Split the string at " (" and keep only the first part.
+    # "Spain (pot 1)" becomes "Spain"
+    base_team_name = str(team_string).split(' (')[0]
+    
+    # Now check if "Spain" is in our dictionary
+    if base_team_name not in status_dict:
+        return ''
+        
+    status = status_dict[base_team_name]
+    
+    # 0 = Eliminated (Red)
+    if status == 0:
+        return 'background-color: #fee2e2; color: #991b1b;' 
+    # 1 = Active (Green)
+    elif status == 1:
+        return 'background-color: #dcfce7; color: #166534;'
+        
+    return ''
+
+
 df_dim_team = pd.read_csv('dim_team.csv')
 dim_team = df_dim_team['team'].tolist()
 
 dropdown_options = ['Tất cả'] + dim_team
 selected_team = st.selectbox('Lọc theo đội:', dropdown_options)
 
-df = pd.read_csv(r"standing.csv").dropna(how='all')
+
 
 if selected_team != "Tất cả":
     # Create a filter mask that checks if the selected team is in ANY of the 4 columns
@@ -67,10 +96,16 @@ display_df = display_df.rename({
     ,'score_4': 'Điểm team 4'
 }, axis=1)
 
-display_df = display_df.style.set_properties(
-    subset=['Tổng điểm','Điểm team 1', 'Điểm team 2', 'Điểm team 3', 'Điểm team 4'], 
-    **{'font-weight': 'bold'}
-)
+team_cols = ['Team 1', 'Team 2', 'Team 3', 'Team 4']
+score_cols = ['Điểm team 1', 'Điểm team 2', 'Điểm team 3', 'Điểm team 4']
+
+display_df = df.style.map(
+                            highlight_team_status, 
+                            subset=team_cols
+                        ).set_properties(
+                            subset=score_cols, 
+                            **{'font-weight': 'bold'}
+                        )
 
 st.dataframe(display_df, use_container_width=True, hide_index=True, height=dynamic_height)
 
