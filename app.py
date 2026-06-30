@@ -4,44 +4,10 @@ import pandas as pd
 
 st.set_page_config(page_title="Bảng xếp hạng dự đoán WC 2026 - MSB", layout="wide")
 st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
-
-# tab_leaderboard, tab_bracket = st.tabs(["📊 Bảng xếp hạng", "🏟️ Nhánh đấu"])
-
-# tab_leaderboard = st.tabs(["📊 Bảng xếp hạng"])
-
-# with tab_leaderboard:
-st.caption("Cập nhật đến sau trận đấu Canana - Nam Phi")
-    
-    # Load the full dataset from your CSV file
-    # Make sure 'leaderboard_data.csv' is saved in the same folder as this Python script
+st.caption("Cập nhật đến sau trận đấu Germany - Paraguay")
 
 df = pd.read_csv(r"standing.csv").dropna(how='all')
 
-# df_fact_current_round = pd.read_csv(r'..\..\wc2026\data\fact_current_round.csv')
-# status_dict = dict(zip(df_fact_current_round['team'], df_fact_current_round['active_status']))
-
-# def highlight_team_status(team_string):
-#     if pd.isna(team_string):
-#         return ''
-        
-#     # THE FIX: Split the string at " (" and keep only the first part.
-#     # "Spain (pot 1)" becomes "Spain"
-#     base_team_name = str(team_string).split(' (')[0]
-    
-#     # Now check if "Spain" is in our dictionary
-#     if base_team_name not in status_dict:
-#         return ''
-        
-#     status = status_dict[base_team_name]
-    
-#     # 0 = Eliminated (Red)
-#     if status == 0:
-#         return 'background-color: #fee2e2; color: #991b1b;' 
-#     # 1 = Active (Green)
-#     elif status == 1:
-#         return 'background-color: #dcfce7; color: #166534;'
-        
-#     return ''
 
 
 df_dim_team = pd.read_csv('dim_team.csv')
@@ -64,14 +30,6 @@ if selected_team != "Tất cả":
 else:
     # If "All Teams" is selected, show everything
     display_df = df
-
-
-
-
-# def style_rows(row):
-#     # Apply a light gray/blue background for even rows, white for odd rows
-#     bg_color = 'background-color: #f8fafc;' if row.name % 2 == 0 else 'background-color: #ffffff;'
-#     return [bg_color] * len(row)
 
 dynamic_height = min(len(display_df) * 35 + 40, 1000) 
 
@@ -98,23 +56,9 @@ display_df = display_df.rename({
 team_cols = ['Team 1', 'Team 2', 'Team 3', 'Team 4']
 score_cols = ['Điểm team 1', 'Điểm team 2', 'Điểm team 3', 'Điểm team 4']
 
-# display_df = df.style.map(
-#                             highlight_team_status, 
-#                             subset=team_cols
-#                         ).set_properties(
-#                             subset=score_cols, 
-#                             **{'font-weight': 'bold'}
-#                         )
-
 display_df = df.style.set_properties(
                             subset=score_cols, 
                             **{'font-weight': 'bold'}
                         )
 
 st.dataframe(display_df, use_container_width=True, hide_index=True, height=dynamic_height)
-
-    
-    # st.caption("Lưu ý: Việc xếp hạng mới tính trên tổng điểm, chưa tính đến các chỉ số phụ. Có thể thay đổi phụ thuộc vào d/s các đội vào vòng 32_team")
-
-# with tab_bracket:
-    # st.caption("T")
