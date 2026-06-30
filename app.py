@@ -10,7 +10,7 @@ st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
 # tab_leaderboard = st.tabs(["📊 Bảng xếp hạng"])
 
 # with tab_leaderboard:
-st.caption("Cập nhật đến sau trận đấu Germany - Paraguay")
+st.caption("Cập nhật đến sau trận đấu Canana - Nam Phi")
     
     # Load the full dataset from your CSV file
     # Make sure 'leaderboard_data.csv' is saved in the same folder as this Python script
