@@ -17,31 +17,31 @@ st.caption("Cập nhật đến sau trận đấu Germany - Paraguay")
 
 df = pd.read_csv(r"standing.csv").dropna(how='all')
 
-df_fact_current_round = pd.read_csv(r'..\..\wc2026\data\fact_current_round.csv')
-status_dict = dict(zip(df_fact_current_round['team'], df_fact_current_round['active_status']))
+# df_fact_current_round = pd.read_csv(r'..\..\wc2026\data\fact_current_round.csv')
+# status_dict = dict(zip(df_fact_current_round['team'], df_fact_current_round['active_status']))
 
-def highlight_team_status(team_string):
-    if pd.isna(team_string):
-        return ''
+# def highlight_team_status(team_string):
+#     if pd.isna(team_string):
+#         return ''
         
-    # THE FIX: Split the string at " (" and keep only the first part.
-    # "Spain (pot 1)" becomes "Spain"
-    base_team_name = str(team_string).split(' (')[0]
+#     # THE FIX: Split the string at " (" and keep only the first part.
+#     # "Spain (pot 1)" becomes "Spain"
+#     base_team_name = str(team_string).split(' (')[0]
     
-    # Now check if "Spain" is in our dictionary
-    if base_team_name not in status_dict:
-        return ''
+#     # Now check if "Spain" is in our dictionary
+#     if base_team_name not in status_dict:
+#         return ''
         
-    status = status_dict[base_team_name]
+#     status = status_dict[base_team_name]
     
-    # 0 = Eliminated (Red)
-    if status == 0:
-        return 'background-color: #fee2e2; color: #991b1b;' 
-    # 1 = Active (Green)
-    elif status == 1:
-        return 'background-color: #dcfce7; color: #166534;'
+#     # 0 = Eliminated (Red)
+#     if status == 0:
+#         return 'background-color: #fee2e2; color: #991b1b;' 
+#     # 1 = Active (Green)
+#     elif status == 1:
+#         return 'background-color: #dcfce7; color: #166534;'
         
-    return ''
+#     return ''
 
 
 df_dim_team = pd.read_csv('dim_team.csv')
