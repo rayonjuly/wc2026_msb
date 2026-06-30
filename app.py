@@ -52,6 +52,7 @@ display_df = display_df.rename({
     ,'ticket': 'Vé'
     ,'total_score': 'Tổng điểm'
     ,'pot_selected': 'Hạt giống'
+    ,'teams_active': 'Số đội còn thi đấu'
     ,'team_1': 'Team 1'
     ,'round_1': 'Vị trí team 1'
     ,'score_1': 'Điểm team 1'
