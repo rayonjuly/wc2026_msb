@@ -53,6 +53,7 @@ display_df = display_df.rename({
     ,'score_4': 'Điểm team 4'
 }, axis=1)
 
+dynamic_height = min(len(display_df) * 35 + 40, 1000) 
 team_cols = ['Team 1', 'Team 2', 'Team 3', 'Team 4']
 score_cols = ['Điểm team 1', 'Điểm team 2', 'Điểm team 3', 'Điểm team 4']
 
@@ -61,6 +62,6 @@ display_df = display_df.style.set_properties(
                             **{'font-weight': 'bold'}
                         )
 
-dynamic_height = min(len(display_df) * 35 + 40, 1000) 
+
 
 st.dataframe(display_df, use_container_width=True, hide_index=True, height=dynamic_height)
