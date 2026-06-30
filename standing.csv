@@ -12,12 +12,12 @@ rank,ticket,total_score,pot_selected,teams_active,team_1,round_1,score_1,team_2,
 11,Nguyễn Hữu Long - vé 2,-1,1234,3,Spain (pot 1),32_team,-2,Senegal (pot 2),32_team,0,Algeria (pot 3),32_team,1,Uzbekistan (pot 4),group_stage,0
 12,Nguyễn Duy Đăng - vé 2,-1,1134,4,France (pot 1),32_team,-2,Spain (pot 1),32_team,-2,Norway (pot 3),32_team,1,Bosnia and Herzegovina (pot 4),32_team,2
 13,Mai Hoàng Nam - vé 1,-1,1234,3,England (pot 1),32_team,-2,Mexico (pot 2),32_team,0,Norway (pot 3),32_team,1,Uzbekistan (pot 4),group_stage,0
-14,Lương Hồ Nam - vé 1,-1,1223,3,France (pot 1),32_team,-2,Austria (pot 2),32_team,0,Japan (pot 2),32_team,0,Egypt (pot 3),32_team,1
-15,Đỗ Bá Thành - vé 1,-1,1234,2,Argentina (pot 1),32_team,-2,Japan (pot 2),32_team,0,Sweden (pot 3),32_team,1,Uzbekistan (pot 4),group_stage,0
-16,Phạm Minh Quân - vé 1,-2,1133,4,France (pot 1),32_team,-2,Spain (pot 1),32_team,-2,Norway (pot 3),32_team,1,Sweden (pot 3),32_team,1
-17,Lê Thanh Tùng - vé 2,-2,1133,4,France (pot 1),32_team,-2,Spain (pot 1),32_team,-2,Norway (pot 3),32_team,1,Sweden (pot 3),32_team,1
-18,Nguyễn Hoàng Long - vé 1,-3,1234,2,France (pot 1),32_team,-2,Uruguay (pot 2),group_stage,-2,Norway (pot 3),32_team,1,Jordan (pot 4),group_stage,0
-19,Trần Thị Huyền Trang - vé 1,-3,1134,3,France (pot 1),32_team,-2,Morocco (pot 1),32_team,-2,Norway (pot 3),32_team,1,Uzbekistan (pot 4),group_stage,0
+14,Trần Thị Huyền Trang - vé 1,-1,1134,3,France (pot 1),32_team,-2,Morocco (pot 1),16_team,0,Norway (pot 3),32_team,1,Uzbekistan (pot 4),group_stage,0
+15,Lương Hồ Nam - vé 1,-1,1223,3,France (pot 1),32_team,-2,Austria (pot 2),32_team,0,Japan (pot 2),32_team,0,Egypt (pot 3),32_team,1
+16,Đỗ Bá Thành - vé 1,-1,1234,2,Argentina (pot 1),32_team,-2,Japan (pot 2),32_team,0,Sweden (pot 3),32_team,1,Uzbekistan (pot 4),group_stage,0
+17,Phạm Minh Quân - vé 1,-2,1133,4,France (pot 1),32_team,-2,Spain (pot 1),32_team,-2,Norway (pot 3),32_team,1,Sweden (pot 3),32_team,1
+18,Lê Thanh Tùng - vé 2,-2,1133,4,France (pot 1),32_team,-2,Spain (pot 1),32_team,-2,Norway (pot 3),32_team,1,Sweden (pot 3),32_team,1
+19,Nguyễn Hoàng Long - vé 1,-3,1234,2,France (pot 1),32_team,-2,Uruguay (pot 2),group_stage,-2,Norway (pot 3),32_team,1,Jordan (pot 4),group_stage,0
 20,Đinh Việt Long - vé 1,-3,1223,3,Portugal (pot 1),32_team,-2,Senegal (pot 2),32_team,0,Turkiye (pot 2),group_stage,-2,Ivory Coast (pot 3),32_team,1
 21,Nguyễn Duy Đăng - vé 1,-4,1112,4,Argentina (pot 1),32_team,-2,Brazil (pot 1),16_team,0,Spain (pot 1),32_team,-2,Mexico (pot 2),32_team,0
 22,Đặng Huy Hoàng - vé 1,-4,1122,3,England (pot 1),32_team,-2,Germany (pot 1),32_team,-2,Mexico (pot 2),32_team,0,USA (pot 2),32_team,0
