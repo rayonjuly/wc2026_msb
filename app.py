@@ -99,10 +99,15 @@ display_df = display_df.rename({
 team_cols = ['Team 1', 'Team 2', 'Team 3', 'Team 4']
 score_cols = ['Điểm team 1', 'Điểm team 2', 'Điểm team 3', 'Điểm team 4']
 
-display_df = df.style.map(
-                            highlight_team_status, 
-                            subset=team_cols
-                        ).set_properties(
+# display_df = df.style.map(
+#                             highlight_team_status, 
+#                             subset=team_cols
+#                         ).set_properties(
+#                             subset=score_cols, 
+#                             **{'font-weight': 'bold'}
+#                         )
+
+display_df = df.style.set_properties(
                             subset=score_cols, 
                             **{'font-weight': 'bold'}
                         )
