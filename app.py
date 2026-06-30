@@ -31,7 +31,7 @@ else:
     # If "All Teams" is selected, show everything
     display_df = df
 
-dynamic_height = min(len(display_df) * 35 + 40, 1000) 
+
 
 
 display_df = display_df.rename({
@@ -56,9 +56,11 @@ display_df = display_df.rename({
 team_cols = ['Team 1', 'Team 2', 'Team 3', 'Team 4']
 score_cols = ['Điểm team 1', 'Điểm team 2', 'Điểm team 3', 'Điểm team 4']
 
-display_df = df.style.set_properties(
+display_df = display_df.style.set_properties(
                             subset=score_cols, 
                             **{'font-weight': 'bold'}
                         )
+
+dynamic_height = min(len(display_df) * 35 + 40, 1000) 
 
 st.dataframe(display_df, use_container_width=True, hide_index=True, height=dynamic_height)
