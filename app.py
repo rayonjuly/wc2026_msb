@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
 from unidecode import unidecode
+
 st.set_page_config(page_title="Bảng xếp hạng dự đoán WC 2026 - MSB", layout="wide")
 st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
 st.caption("Cập nhật đến sau trận đấu Mexico - Ecuador")
@@ -25,7 +26,7 @@ with tab1:
         selected_team_2 = st.selectbox('Lọc theo đội 2:', dropdown_team)
 
     # Search box: Theo người chơi
-    dim_user = sorted(df['ticket'].str.split(" - ").str[0].apply(lambda x: unidecode(x)).unique().tolist())
+    dim_user = sorted(df['ticket'].str.split(" - ").str[0].sort_values(by='ticket', key=lambda col: col.apply(unidecode)).unique().tolist())
     
     dropdown_user = ['Tất cả'] + dim_user
     selected_user = st.selectbox('Lọc theo người chơi:', dropdown_user)
