@@ -4,7 +4,7 @@ import pandas as pd
 
 st.set_page_config(page_title="Bảng xếp hạng dự đoán WC 2026 - MSB", layout="wide")
 st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
-st.caption("Cập nhật đến sau trận đấu France - Sweden")
+st.caption("Cập nhật đến sau trận đấu Mexico - Ecuador")
 
 df = pd.read_csv(r"standing.csv").dropna(how='all')
 
@@ -56,7 +56,7 @@ display_df = display_df.rename({
 
 dynamic_height = min(len(display_df) * 35 + 40, 1000) 
 team_cols = ['Team 1', 'Team 2', 'Team 3', 'Team 4']
-score_cols = ['Điểm team 1', 'Điểm team 2', 'Điểm team 3', 'Điểm team 4']
+score_cols = ['Tổng điểm','Điểm team 1', 'Điểm team 2', 'Điểm team 3', 'Điểm team 4']
 
 display_df = display_df.style.set_properties(
                             subset=score_cols, 
