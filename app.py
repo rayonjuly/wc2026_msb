@@ -4,7 +4,7 @@ import pandas as pd
 
 st.set_page_config(page_title="Bảng xếp hạng dự đoán WC 2026 - MSB", layout="wide")
 st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
-st.caption("Cập nhật đến sau trận đấu Netherlands - Morocco")
+st.caption("Cập nhật đến sau trận đấu France - Sweden")
 
 df = pd.read_csv(r"standing.csv").dropna(how='all')
 
