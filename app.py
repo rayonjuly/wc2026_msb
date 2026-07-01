@@ -1,8 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
-import unidecode
-
+from unidecode import unidecode
 st.set_page_config(page_title="Bảng xếp hạng dự đoán WC 2026 - MSB", layout="wide")
 st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
 st.caption("Cập nhật đến sau trận đấu Mexico - Ecuador")
