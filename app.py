@@ -181,7 +181,6 @@ with tab_bracket:
         .tournament-wrapper {{
             min-width: 1400px;
             background-color: #e2e8f0;
-            # background-color: #0f172a;
             padding: 20px;
             border-radius: 10px;
         }}
@@ -205,7 +204,7 @@ with tab_bracket:
             width: 100%;
             min-width: 1400px; /* Widened to fit the extra SF columns */
             padding: 20px;
-            background-color: #0f172a;
+            background-color: #e2e8f0;
             border-radius: 10px;
         }}
         .col {{
