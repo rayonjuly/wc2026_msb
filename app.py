@@ -26,8 +26,8 @@ with tab1:
         selected_team_2 = st.selectbox('Lọc theo đội 2:', dropdown_team)
 
     # Search box: Theo người chơi
-    dim_user = sorted(df['ticket'].str.split(" - ").str[0].sort_values(by='ticket', key=lambda col: col.apply(unidecode)).unique().tolist())
-    
+    dim_user = df['ticket'].str.split(" - ").str[0].drop_duplicates().sort_values(key=lambda col: col.apply(unidecode)).tolist()
+
     dropdown_user = ['Tất cả'] + dim_user
     selected_user = st.selectbox('Lọc theo người chơi:', dropdown_user)
 
