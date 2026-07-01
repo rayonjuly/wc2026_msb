@@ -332,8 +332,8 @@ with tab_bracket:
                 <div class="col col-teams" style="justify-content: space-around; padding: 20px 0;">
                     <div class="match">{get_team_box("Paraguay", "16_team")}{get_team_box("France", "16_team")}</div>
                     <div class="match">{get_team_box("Canada", "16_team")}{get_team_box("Morocco", "16_team")}</div>
-                    <div class="match">{get_team_box("", "16_team")}{get_team_box("", "16_team")}</div>
-                    <div class="match">{get_team_box("", "16_team")}{get_team_box("", "16_team")}</div>
+                    <div class="match">{get_team_box("TBD", "16_team")}{get_team_box("TBD", "16_team")}</div>
+                    <div class="match">{get_team_box("TBD", "16_team")}{get_team_box("TBD", "16_team")}</div>
                 </div>
 
                 <div class="col col-paths">
@@ -341,8 +341,8 @@ with tab_bracket:
                 </div>
 
                 <div class="col col-teams" style="justify-content: space-around; padding: 80px 0;">
-                    <div class="match">{get_team_box("", "quarter_final")}{get_team_box("", "quarter_final")}</div>
-                    <div class="match">{get_team_box("", "quarter_final")}{get_team_box("", "quarter_final")}</div>
+                    <div class="match">{get_team_box("TBD", "quarter_final")}{get_team_box("TBD", "quarter_final")}</div>
+                    <div class="match">{get_team_box("TBD", "quarter_final")}{get_team_box("TBD", "quarter_final")}</div>
                 </div>
 
                 <div class="col col-paths">
@@ -350,7 +350,7 @@ with tab_bracket:
                 </div>
                 
                 <div class="col col-teams" style="justify-content: center;">
-                    <div class="match">{get_team_box("", "semi_final")}{get_team_box("", "semi_final")}</div>
+                    <div class="match">{get_team_box("TBD", "semi_final")}{get_team_box("TBD", "semi_final")}</div>
                 </div>
 
                 <div class="center-stage">
@@ -362,7 +362,7 @@ with tab_bracket:
                 </div>
                 
                 <div class="col col-teams" style="justify-content: center;">
-                    <div class="match">{get_team_box("", "semi_final")}{get_team_box("", "semi_final")}</div>
+                    <div class="match">{get_team_box("TBD", "semi_final")}{get_team_box("TBD", "semi_final")}</div>
                 </div>
 
                 <div class="col col-paths">
@@ -370,8 +370,8 @@ with tab_bracket:
                 </div>
 
                 <div class="col col-teams" style="justify-content: space-around; padding: 80px 0;">
-                    <div class="match">{get_team_box("", "quarter_final")}{get_team_box("", "quarter_final")}</div>
-                    <div class="match">{get_team_box("", "quarter_final")}{get_team_box("", "quarter_final")}</div>
+                    <div class="match">{get_team_box("TBD", "quarter_final")}{get_team_box("TBD", "quarter_final")}</div>
+                    <div class="match">{get_team_box("TBD", "quarter_final")}{get_team_box("TBD", "quarter_final")}</div>
                 </div>
 
                 <div class="col col-paths">
@@ -380,9 +380,9 @@ with tab_bracket:
 
                 <div class="col col-teams" style="justify-content: space-around; padding: 20px 0;">
                     <div class="match">{get_team_box("Brazil", "16_team")}{get_team_box("Norway", "16_team")}</div>
-                    <div class="match">{get_team_box("Mexico", "16_team")}{get_team_box("", "16_team")}</div>
-                    <div class="match">{get_team_box("", "16_team")}{get_team_box("", "16_team")}</div>
-                    <div class="match">{get_team_box("", "16_team")}{get_team_box("", "16_team")}</div>
+                    <div class="match">{get_team_box("Mexico", "16_team")}{get_team_box("TBD", "16_team")}</div>
+                    <div class="match">{get_team_box("TBD", "16_team")}{get_team_box("TBD", "16_team")}</div>
+                    <div class="match">{get_team_box("TBD", "16_team")}{get_team_box("TBD", "16_team")}</div>
                 </div>
 
                 <div class="col col-paths">
