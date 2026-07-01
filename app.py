@@ -77,7 +77,7 @@ with tab1:
 
     # highlight teams
 
-    df_fact_current_round = pd.read_csv(r"..\wc2026\data\fact_current_round.csv")
+    df_fact_current_round = pd.read_csv(r"fact_current_round.csv")
     status_dict = dict(zip(df_fact_current_round['team'], df_fact_current_round['team_status']))
 
     def highlight_team_status(team_string):
@@ -112,7 +112,7 @@ with tab1:
             .set_properties(
                 subset=score_cols, 
                 **{'font-weight': 'bold'}
-            ) \
+            ) 
 
     
     st.dataframe(display_df, use_container_width=True, hide_index=True, height=dynamic_height)
