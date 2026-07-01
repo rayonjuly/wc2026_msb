@@ -173,14 +173,15 @@ with tab_bracket:
     <style>
         body {{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e2e8f0;
+            background-color: transparent;
             color: #e2e8f0;
             margin: 0;
         }}
         /* NEW: Wrapper to hold headers and the bracket together */
         .tournament-wrapper {{
             min-width: 1400px;
-            background-color: #0f172a;
+            # background-color: #0f172a;
+            background-color: #e2e8f0;
             padding: 20px;
             border-radius: 10px;
         }}
