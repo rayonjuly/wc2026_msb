@@ -176,6 +176,7 @@ with tab_bracket:
             background-color: transparent;
             color: #e2e8f0;
             margin: 0;
+            overflow-y: hidden;
         }}
         /* NEW: Wrapper to hold headers and the bracket together */
         .tournament-wrapper {{
@@ -407,4 +408,4 @@ with tab_bracket:
     """
 
     # 5. Render the custom HTML
-    components.html(bracket_html, height=800, scrolling=True)
+    components.html(bracket_html, height=900, scrolling=True)
