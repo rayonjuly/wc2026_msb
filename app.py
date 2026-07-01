@@ -180,8 +180,8 @@ with tab_bracket:
         /* NEW: Wrapper to hold headers and the bracket together */
         .tournament-wrapper {{
             min-width: 1400px;
-            # background-color: #0f172a;
             background-color: #e2e8f0;
+            # background-color: #0f172a;
             padding: 20px;
             border-radius: 10px;
         }}
