@@ -173,7 +173,7 @@ with tab_bracket:
     <style>
         body {{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: transparent;
+            background-color: #e2e8f0;
             color: #e2e8f0;
             margin: 0;
         }}
