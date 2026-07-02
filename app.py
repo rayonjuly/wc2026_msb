@@ -135,8 +135,6 @@ with tab_rules: # Thay bằng tên tab thực tế của bạn
     ### 🧮 CÁCH TÍNH ĐIỂM
     Tổng điểm mỗi vé là tổng điểm của cả 4 đội tuyển. Điểm của mỗi đội phụ thuộc vào việc dừng ở vòng nào và nằm ở nhóm hạt giống nào. 
 
-    > *Bảng tính điểm cho từng nhóm hạt giống xin xem trong ảnh đính kèm.* > **VD:** Đội hạt giống số 1 nếu bị loại ở vòng bảng được -4 điểm, vô địch được 5 điểm...
-
     ---
 
     ### 🏆 THỨ TỰ ƯU TIÊN XẾP HẠNG
