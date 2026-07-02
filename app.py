@@ -334,7 +334,7 @@ with tab_bracket:
                     <div class="match">{get_team_box("Paraguay", "16_team")}{get_team_box("France", "16_team")}</div>
                     <div class="match">{get_team_box("Canada", "16_team")}{get_team_box("Morocco", "16_team")}</div>
                     <div class="match">{get_team_box("TBD", "16_team")}{get_team_box("TBD", "16_team")}</div>
-                    <div class="match">{get_team_box("TBD", "16_team")}{get_team_box("TBD", "16_team")}</div>
+                    <div class="match">{get_team_box("TBD", "16_team")}{get_team_box("Belgium", "16_team")}</div>
                 </div>
 
                 <div class="col col-paths">
@@ -381,7 +381,7 @@ with tab_bracket:
 
                 <div class="col col-teams" style="justify-content: space-around; padding: 20px 0;">
                     <div class="match">{get_team_box("Brazil", "16_team")}{get_team_box("Norway", "16_team")}</div>
-                    <div class="match">{get_team_box("Mexico", "16_team")}{get_team_box("TBD", "16_team")}</div>
+                    <div class="match">{get_team_box("Mexico", "16_team")}{get_team_box("England", "16_team")}</div>
                     <div class="match">{get_team_box("TBD", "16_team")}{get_team_box("TBD", "16_team")}</div>
                     <div class="match">{get_team_box("TBD", "16_team")}{get_team_box("TBD", "16_team")}</div>
                 </div>

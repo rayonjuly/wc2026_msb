@@ -3,7 +3,7 @@ Algeria,32_team,1
 Argentina,32_team,1
 Australia,32_team,1
 Austria,32_team,1
-Belgium,32_team,1
+Belgium,16_team,1
 Bosnia and Herzegovina,32_team,1
 Brazil,16_team,1
 Canada,16_team,1
@@ -12,10 +12,10 @@ Colombia,32_team,1
 Croatia,32_team,1
 Curacao,group_stage,0
 Czech Republic,group_stage,0
-DR Congo,32_team,1
+DR Congo,32_team,0
 Ecuador,32_team,0
 Egypt,32_team,1
-England,32_team,1
+England,16_team,1
 France,16_team,1
 Germany,32_team,0
 Ghana,32_team,1
@@ -36,7 +36,7 @@ Portugal,32_team,1
 Qatar,group_stage,0
 Saudi Arabia,group_stage,0
 Scotland,group_stage,0
-Senegal,32_team,1
+Senegal,32_team,0
 South Africa,32_team,0
 South Korea,group_stage,0
 Spain,32_team,1
