@@ -7,7 +7,7 @@ st.set_page_config(page_title="Bảng xếp hạng dự đoán WC 2026 - MSB", l
 st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
 st.caption("Cập nhật đến sau trận đấu USA - Bosnia")
 
-tab1, tab2, tab_bracket = st.tabs(["Bảng xếp hạng", "Cách tính điểm", "Phân nhánh"])
+tab1, tab2, tab_rules, tab_bracket = st.tabs(["Bảng xếp hạng", "Cách tính điểm", "Luật", "Phân nhánh"])
 
 with tab1:
 
@@ -123,6 +123,42 @@ with tab2:
 
 # status_dict = {'Brazil': 1, 'Japan': 0, 'Spain': 1, 'Mexico': 0, 'Germany': 1, 'Canada': 0}
 ticket_list = df['ticket'].drop_duplicates().sort_values(key=lambda col: col.apply(unidecode)).tolist()
+
+with tab_rules: # Thay bằng tên tab thực tế của bạn
+    st.markdown("""
+    ### 📜 LUẬT CHƠI
+    * **Cách thức lựa chọn:** Mỗi người chơi chọn 4 đội tuyển khác nhau trong tổng số 48 đội tham gia World Cup 2026, trong đó **1 vé = 1 lần lựa chọn 4 đội tuyển**. Người chơi có thể mua nhiều vé. Không có yêu cầu đặc biệt về việc lựa chọn giữa các vé khác nhau.
+    * **Thời gian bình chọn:** Link bình chọn sẽ đóng lúc **13:00 ngày 12/06/2026**. Mọi lựa chọn ghi nhận sau thời gian này đều được coi là không hợp lệ.
+
+    ---
+
+    ### 🧮 CÁCH TÍNH ĐIỂM
+    Tổng điểm mỗi vé là tổng điểm của cả 4 đội tuyển. Điểm của mỗi đội phụ thuộc vào việc dừng ở vòng nào và nằm ở nhóm hạt giống nào. 
+
+    > *Bảng tính điểm cho từng nhóm hạt giống xin xem trong ảnh đính kèm.* > **VD:** Đội hạt giống số 1 nếu bị loại ở vòng bảng được -4 điểm, vô địch được 5 điểm...
+
+    ---
+
+    ### 🏆 THỨ TỰ ƯU TIÊN XẾP HẠNG
+    Khi World Cup 2026 kết thúc, vé được xếp hạng dựa trên tổng điểm 4 đội. Trong trường hợp nhiều người chơi có cùng tổng điểm, thứ tự xếp hạng sẽ được quyết định lần lượt theo các tiêu chí sau:
+
+    1. So sánh thành tích của **đội vào sâu nhất** (thành tích tính theo vòng).
+    2. So sánh thành tích của **đội vào sâu thứ 2** (thành tích tính theo vòng).
+    3. So sánh thành tích của **đội vào sâu thứ 3** (thành tích tính theo vòng).
+    4. So sánh thành tích của **đội vào sâu thứ 4** (thành tích tính theo vòng).
+    5. Tổng **hiệu số** của cả 4 đội (tính cả thời gian 120 phút của trận đấu).
+    6. Tổng **bàn thắng** của cả 4 đội (tính cả thời gian 120 phút của trận đấu).
+    7. Nếu vẫn bằng nhau ➔ Tổng **điểm thẻ phạt** của cả 4 đội trong 120 phút thi đấu *(Thẻ đỏ = -2 điểm, Thẻ vàng = -1 điểm)*. Điểm thẻ phạt ít âm hơn sẽ xếp trên.
+    8. Nếu vẫn bằng nhau ➔ **Hòa**.
+
+    ---
+
+    ### 💰 ĐIỀU KHOẢN CHIA THƯỞNG 
+    **(Khi các vé chọn 4 đội giống nhau và đạt giải)**
+    
+    Trong trường hợp có nhiều vé chọn 4 đội giống nhau và đạt giải (Hạng 1, Hạng 2, Hạng 3), tiền thưởng của các hạng tương ứng sẽ được cộng gộp và chia đều cho số lượng vé đồng hạng. 
+    """)
+
 
 with tab_bracket:
 
