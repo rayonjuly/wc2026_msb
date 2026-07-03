@@ -5,7 +5,7 @@ from unidecode import unidecode
 
 st.set_page_config(page_title="Bảng xếp hạng dự đoán WC 2026 - MSB", layout="wide")
 st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
-st.caption("Cập nhật đến sau trận đấu USA - Bosnia")
+st.caption("Cập nhật đến sau trận đấu Portugal - Croatia")
 
 tab1, tab2, tab_rules, tab_bracket = st.tabs(["Bảng xếp hạng", "Cách tính điểm", "Luật", "Phân nhánh"])
 
@@ -367,7 +367,7 @@ with tab_bracket:
                 <div class="col col-teams" style="justify-content: space-around; padding: 20px 0;">
                     <div class="match">{get_team_box("Paraguay", "16_team")}{get_team_box("France", "16_team")}</div>
                     <div class="match">{get_team_box("Canada", "16_team")}{get_team_box("Morocco", "16_team")}</div>
-                    <div class="match">{get_team_box("TBD", "16_team")}{get_team_box("TBD", "16_team")}</div>
+                    <div class="match">{get_team_box("Portugal", "16_team")}{get_team_box("Spain", "16_team")}</div>
                     <div class="match">{get_team_box("USA", "16_team")}{get_team_box("Belgium", "16_team")}</div>
                 </div>
 
