@@ -5,7 +5,7 @@ from unidecode import unidecode
 
 st.set_page_config(page_title="Bảng xếp hạng dự đoán WC 2026 - MSB", layout="wide")
 st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
-st.caption("Cập nhật đến sau trận đấu Portugal - Croatia")
+st.caption("Cập nhật đến sau trận đấu Switzerland - Algeria")
 
 tab1, tab2, tab_rules, tab_bracket = st.tabs(["Bảng xếp hạng", "Cách tính điểm", "Luật", "Phân nhánh"])
 

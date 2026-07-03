@@ -1,5 +1,5 @@
 team,current_round,team_status
-Algeria,32_team,1
+Algeria,32_team,0
 Argentina,32_team,1
 Australia,32_team,1
 Austria,32_team,0
@@ -41,7 +41,7 @@ South Africa,32_team,0
 South Korea,group_stage,0
 Spain,16_team,1
 Sweden,32_team,0
-Switzerland,32_team,1
+Switzerland,16_team,1
 Tunisia,group_stage,0
 Turkiye,group_stage,0
 Uruguay,group_stage,0
