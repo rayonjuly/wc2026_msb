@@ -263,7 +263,7 @@ def render_bracket():
                 <div class="col col-teams" style="justify-content: space-around; padding: 20px 0;">
                     <div class="match">{get_team_box("Brazil", "16_team")}{get_team_box("Norway", "16_team")}</div>
                     <div class="match">{get_team_box("Mexico", "16_team")}{get_team_box("England", "16_team")}</div>
-                    <div class="match">{get_team_box("ArgentinaTBD", "16_team")}{get_team_box("Egypt", "16_team")}</div>
+                    <div class="match">{get_team_box("Argentina", "16_team")}{get_team_box("Egypt", "16_team")}</div>
                     <div class="match">{get_team_box("Switzerland", "16_team")}{get_team_box("Colombia", "16_team")}</div>
                 </div>
 
