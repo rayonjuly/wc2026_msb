@@ -5,6 +5,7 @@ from unidecode import unidecode
 import datetime
 import json
 import os
+import importlib.util # THE NEW IMPORT
 
 # 1. Mock Data for Articles
 
@@ -13,28 +14,41 @@ COMMENTS_FILE = "data/comments.json"
 ARTICLES_DIR = "data/articles"
 
 def load_articles():
-    """Reads all JSON files in the articles directory and returns a sorted list."""
+    """Reads all Python files in the articles directory and extracts their metadata and render functions."""
     articles_list = []
     
-    # Check if the directory exists
     if os.path.exists(ARTICLES_DIR):
-        # Loop through every file in the folder
         for filename in os.listdir(ARTICLES_DIR):
-            if filename.endswith(".json"):
+            # Only process .py files (and ignore hidden __init__.py files)
+            if filename.endswith(".py") and not filename.startswith("__"):
                 filepath = os.path.join(ARTICLES_DIR, filename)
-                with open(filepath, 'r', encoding='utf-8') as f:
-                    try:
-                        article_data = json.load(f)
+                module_name = filename[:-3] # Remove '.py' for the module name
+                
+                try:
+                    # Dynamically load the Python file
+                    spec = importlib.util.spec_from_file_location(module_name, filepath)
+                    module = importlib.util.module_from_spec(spec)
+                    spec.loader.exec_module(module)
+                    
+                    # Extract the metadata and the render function
+                    article_data = {
+                        "id": getattr(module, "ID", 0),
+                        "title": getattr(module, "TITLE", "Không có tiêu đề"),
+                        "author": getattr(module, "AUTHOR", "Ẩn danh"),
+                        "render_func": getattr(module, "render", None) # Grabs the function itself!
+                    }
+                    
+                    # Only add it if the render function exists
+                    if article_data["render_func"] is not None:
                         articles_list.append(article_data)
-                    except json.JSONDecodeError:
-                        st.error(f"Lỗi định dạng JSON ở file: {filename}")
+                        
+                except Exception as e:
+                    st.error(f"Lỗi khi load bài viết {filename}: {e}")
     else:
-        # Create the folder if it doesn't exist yet
         os.makedirs(ARTICLES_DIR, exist_ok=True)
         
-    # Sort the articles by their ID so they appear in the correct order (1, 2, 3...)
-    articles_list = sorted(articles_list, key=lambda x: x.get('id', 0))
-    return articles_list
+    # Sort by ID
+    return sorted(articles_list, key=lambda x: x.get('id', 0))
 
 articles = load_articles()
 
@@ -123,11 +137,14 @@ def render_discussion():
             st.session_state.viewing_article = None
             st.rerun()
             
-        # Article Content
+        # Article Header
         st.header(current_article['title'])
         st.caption(f"Tác giả: **{current_article['author']}**")
         st.write("")
-        st.markdown(current_article['content'])
+        
+        # --- EXECUTE THE PYTHON ARTICLE ---
+        # This calls the render() function from inside the specific article_X.py file!
+        current_article['render_func']()
         
         st.markdown("---")
         

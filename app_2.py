@@ -6,7 +6,7 @@ from unidecode import unidecode
 from tabs.tab_leaderboard import render_leaderboard
 from tabs.tab_rules import render_rules
 from tabs.tab_bracket import render_bracket
-# from tabs.tab_discussion import render_discussion
+from tabs.tab_discussion_2 import render_discussion
 
 st.set_page_config(page_title="Bảng xếp hạng dự đoán WC 2026 - MSB", layout="wide")
 st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
@@ -27,5 +27,5 @@ with tab_rules:
 with tab_bracket:
     render_bracket()
 
-# with tab_discussion:
-#     render_discussion()
+with tab_discussion:
+    render_discussion()
