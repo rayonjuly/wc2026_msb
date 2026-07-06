@@ -1,0 +1,11 @@
+# Ignore the Google API Service Account key (CRITICAL FOR SECURITY)
+service_account.json
+
+# Ignore local user data so it isn't overwritten by Git pulls
+data/comments.json
+data/guest_users.json
+data/accounts.json
+
+# Ignore standard Python cache and OS system files
+__pycache__/
+.DS_Store
