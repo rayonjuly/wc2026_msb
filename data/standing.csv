@@ -7,7 +7,7 @@ rank,ticket,total_score,pot_selected,teams_active,team_1,round_1,score_1,team_2,
 6,Mai Hoàng Nam - vé 1,7,1234,2,England (pot 1),quarter_final,1,Mexico (pot 2),16_team,2,Norway (pot 3),quarter_final,4,Uzbekistan (pot 4),group_stage,0
 7,Lê Thanh Tùng - vé 2,7,1133,3,France (pot 1),quarter_final,1,Spain (pot 1),quarter_final,1,Norway (pot 3),quarter_final,4,Sweden (pot 3),32_team,1
 8,Phạm Minh Quân - vé 1,7,1133,3,France (pot 1),quarter_final,1,Spain (pot 1),quarter_final,1,Norway (pot 3),quarter_final,4,Sweden (pot 3),32_team,1
-9,Mai Hoàng Nam - vé 2,6,1344,2,Spain (pot 1),quarter_final,1,Canada (pot 3),16_team,3,Ghana (pot 4),32_team,2,Iraq (pot 4),group_stage,0
+9,Mai Hoàng Nam - vé 2,6,1344,1,Spain (pot 1),quarter_final,1,Canada (pot 3),16_team,3,Ghana (pot 4),32_team,2,Iraq (pot 4),group_stage,0
 10,Vũ Thành Công - vé 1,6,1233,2,Spain (pot 1),quarter_final,1,Senegal (pot 2),32_team,0,Norway (pot 3),quarter_final,4,Sweden (pot 3),32_team,1
 11,Trần Thị Huyền Trang - vé 1,6,1134,3,France (pot 1),quarter_final,1,Morocco (pot 1),quarter_final,1,Norway (pot 3),quarter_final,4,Uzbekistan (pot 4),group_stage,0
 12,Lê Thanh Tùng - vé 1,6,1133,2,Brazil (pot 1),16_team,0,Spain (pot 1),quarter_final,1,Norway (pot 3),quarter_final,4,Sweden (pot 3),32_team,1
