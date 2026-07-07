@@ -48,7 +48,7 @@ def load_articles():
         os.makedirs(ARTICLES_DIR, exist_ok=True)
         
     # Sort by ID
-    return sorted(articles_list, key=lambda x: x.get('id', 0))
+    return sorted(articles_list, key=lambda x: x.get('id', 0), reverse=True)
 
 articles = load_articles()
 

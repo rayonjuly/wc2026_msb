@@ -224,7 +224,7 @@ def render_bracket():
 
                 <div class="col col-teams" style="justify-content: space-around; padding: 80px 0;">
                     <div class="match">{get_team_box("France", "quarter_final")}{get_team_box("Morocco", "quarter_final")}</div>
-                    <div class="match">{get_team_box("TBD", "quarter_final")}{get_team_box("TBD", "quarter_final")}</div>
+                    <div class="match">{get_team_box("Spain", "quarter_final")}{get_team_box("Belgium", "quarter_final")}</div>
                 </div>
 
                 <div class="col col-paths">

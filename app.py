@@ -10,7 +10,7 @@ from tabs.tab_discussion import render_discussion
 
 st.set_page_config(page_title="Bảng xếp hạng dự đoán WC 2026 - MSB", layout="wide")
 st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
-st.caption("Cập nhật đến sau trận đấu England - Mexico")
+st.caption("Cập nhật đến sau trận đấu USA - Belgium")
 
 tab_leaderboard, tab_score_rules, tab_rules, tab_bracket, tab_discussion = st.tabs(["Bảng xếp hạng", "Cách tính điểm", "Luật", "Phân nhánh", "Tạp chí"])
 
