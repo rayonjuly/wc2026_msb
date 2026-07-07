@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 1. Metadata for the Discussion List
-ID = 4
+ID = 6
 TITLE = "Bóng đá không liên quan đến chính trị - trò hề của FIFA"
 AUTHOR = "Trần Xuân Huy"
 
