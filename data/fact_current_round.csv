@@ -1,6 +1,6 @@
 team,current_round,team_status
 Algeria,32_team,0
-Argentina,16_team,1
+Argentina,quarter_final,1
 Australia,32_team,0
 Austria,32_team,0
 Belgium,quarter_final,1
@@ -8,13 +8,13 @@ Bosnia and Herzegovina,32_team,0
 Brazil,16_team,0
 Canada,16_team,0
 Cape Verde,32_team,0
-Colombia,16_team,1
+Colombia,16_team,0
 Croatia,32_team,0
 Curacao,group_stage,0
 Czech Republic,group_stage,0
 DR Congo,32_team,0
 Ecuador,32_team,0
-Egypt,16_team,1
+Egypt,16_team,0
 England,quarter_final,1
 France,quarter_final,1
 Germany,32_team,0
@@ -41,7 +41,7 @@ South Africa,32_team,0
 South Korea,group_stage,0
 Spain,quarter_final,1
 Sweden,32_team,0
-Switzerland,16_team,1
+Switzerland,quarter_final,1
 Tunisia,group_stage,0
 Turkiye,group_stage,0
 Uruguay,group_stage,0
