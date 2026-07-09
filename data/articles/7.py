@@ -24,7 +24,7 @@ def render():
 
     st.markdown('Ronaldo bước vào World Cup đầu tiên năm 2006 khi mới 21 tuổi. Anh ghi bàn đầu tiên trong sự nghiệp World Cup từ chấm phạt đền trong trận gặp Iran, giúp Bồ Đào Nha thắng 2-0, và trở thành cầu thủ Bồ Đào Nha trẻ nhất từng ghi bàn tại một kỳ World Cup. Năm đó, Bồ Đào Nha tiến vào bán kết — đây vẫn là thành tích sâu nhất mà Ronaldo từng đạt được ở giải đấu này trong suốt sự nghiệp, dù sau này anh còn chơi thêm năm kỳ World Cup nữa.')
 
-    st.markkdown('**Nam Phi 2010, Brazil 2014 — Những năm tháng ở đỉnh cao phong độ, nhưng World Cup vẫn khép cửa**')
+    st.markkdown('**Nam Phi 2010, Brazil 2014 — Những năm tháng ở đỉnh cao phong độ**')
 
     st.markdown('Ở tuổi sung sức nhất, khi đang thống trị bóng đá châu Âu cùng Real Madrid, Ronaldo vẫn không thể đưa Bồ Đào Nha tiến xa tại World Cup. Cả hai kỳ giải này, đội tuyển của anh đều dừng bước sớm, để lại cảm giác tiếc nuối rằng phong độ cấp câu lạc bộ chưa từng được tái hiện trọn vẹn trên sân khấu World Cup.')
 
