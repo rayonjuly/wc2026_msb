@@ -4,3 +4,4 @@ seaborn
 unidecode
 PyYAML
 matplotlib
+streamlit_analytics2
