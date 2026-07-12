@@ -232,7 +232,7 @@ def render_bracket():
                 </div>
                 
                 <div class="col col-teams" style="justify-content: center;">
-                    <div class="match">{get_team_box("France", "semi_final")}{get_team_box("TBD", "semi_final")}</div>
+                    <div class="match">{get_team_box("France", "semi_final")}{get_team_box("Spain", "semi_final")}</div>
                 </div>
 
                 <div class="center-stage">
@@ -244,7 +244,7 @@ def render_bracket():
                 </div>
                 
                 <div class="col col-teams" style="justify-content: center;">
-                    <div class="match">{get_team_box("TBD", "semi_final")}{get_team_box("TBD", "semi_final")}</div>
+                    <div class="match">{get_team_box("England", "semi_final")}{get_team_box("Argentina", "semi_final")}</div>
                 </div>
 
                 <div class="col col-paths">
