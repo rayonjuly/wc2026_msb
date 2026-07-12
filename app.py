@@ -17,7 +17,7 @@ with streamlit_analytics.track():
 
     st.set_page_config(page_title="Bảng xếp hạng dự đoán WC 2026 - MSB", layout="wide")
     st.title("🏆 Bảng xếp hạng dự đoán WC 2026 - MSB")
-    st.caption("Cập nhật đến sau trận đấu France - Morocco")
+    st.caption("Cập nhật đến sau trận đấu Argentina - Switzerland")
 
     tab_leaderboard, tab_score_rules, tab_rules, tab_bracket, tab_discussion = st.tabs(["Bảng xếp hạng", "Cách tính điểm", "Luật", "Phân nhánh", "Tạp chí"])
 
