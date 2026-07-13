@@ -27,11 +27,11 @@ def create_leaderboard(scenario):
     """
 
     
-    df_fact_selection = normalize_column_name(pd.read_csv(r'data\fact_selection.csv'))
-    df_fact_current_round = normalize_column_name(pd.read_csv(r'data\fact_current_round.csv'))
+    df_fact_selection = normalize_column_name(pd.read_csv(r'data/fact_selection.csv'))
+    df_fact_current_round = normalize_column_name(pd.read_csv(r'data/fact_current_round.csv'))
 
-    df_dim_team = normalize_column_name(pd.read_csv(r'data\dim_team.csv'))
-    df_dim_score = normalize_column_name(pd.read_csv(r'data\dim_score.csv'))
+    df_dim_team = normalize_column_name(pd.read_csv(r'data/dim_team.csv'))
+    df_dim_score = normalize_column_name(pd.read_csv(r'data/dim_score.csv'))
     
 
     # change the df_fact_current_round based on the scenario:
