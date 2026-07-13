@@ -2,14 +2,28 @@ import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
 from unidecode import unidecode
+import re
 
+def normalize_column_name(df):
+    result = []
+    for col in df.columns:
+        col = re.sub('(\n|\t)', '', col) # replace \n and \t with ''
+        col = col.lower() # lower
+        col = re.sub(' ', '_', col) # repace ' ' with '_'
+        col = unidecode(col) # remove accent
+
+        result.append(col)
+
+    df.columns = result
+
+    return df
 
 def render_leaderboard():
     ##################
     # Load data
     ##################
-    df = pd.read_csv(r"data/standing.csv").dropna(how='all')
-    df_dim_team = pd.read_csv(r'data/dim_team.csv')
+    df = normalize_column_name(pd.read_csv(r"data/standing.csv").dropna(how='all'))
+    df_dim_team = normalize_column_name(pd.read_csv(r'data/dim_team.csv'))
 
     ##################
     # Search box: Theo team
