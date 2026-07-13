@@ -23,7 +23,7 @@ def render_leaderboard():
     # Load data
     ##################
     df = normalize_column_name(pd.read_csv(r"data/standing.csv").dropna(how='all'))
-    df_dim_team = normalize_column_name(pd.read_csv(r'data/dim_team.csv'))
+    df_dim_team = pd.read_csv(r'data/dim_team.csv')
 
     ##################
     # Search box: Theo team
