@@ -148,7 +148,7 @@ def create_leaderboard(scenario):
 
 
 def render_scenario():
-    scenario_path = r"..\data\scenario.yaml"
+    scenario_path = r"data\scenario.yaml"
     with open(scenario_path, "r", encoding='utf-8') as file:
         scenario_file = yaml.safe_load(file)
 
