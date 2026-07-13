@@ -20,10 +20,10 @@ def normalize_column_name(df):
 
 def render_scenario_by_user():
     df = pd.read_csv(r"data/scenario_by_user.csv")
-
+    df = df.fillna('')
     df['Kịch bản top 1'] = df['Kịch bản top 1'].astype(str).str.replace(';', '\n')
     df['Kịch bản top 3'] = df['Kịch bản top 3'].astype(str).str.replace(';', '\n')
-    df = df.replace('nan', '') 
+
     df = df.replace(0, '') 
     dim_user = df['User'].tolist()
 
