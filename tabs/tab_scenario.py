@@ -164,12 +164,12 @@ def render_scenario():
     # 2. Create a clean layout (2 rows of 4 buttons)
     st.subheader("Chọn kịch bản")
     row1 = st.columns(4)
-    row2 = st.columns(4)
+
 
     # 3. Generate the 8 buttons
-    for i in range(1, 9):
+    for i in range(1, 5):
         # Decide which row the button belongs to
-        col = row1[i-1] if i <= 4 else row2[i-5]
+        col = row1[i-1]
 
         
 

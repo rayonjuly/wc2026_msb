@@ -1,24 +1,4 @@
 scenario:
-  - id: scenario_1
-    content:
-      France: winner
-      Argentina: final
-    name: "Chung kết = France, Argentina --- Vô địch: France"
-  - id: scenario_2
-    content:
-      France: final
-      Argentina: winner
-    name: "Chung kết = France, Argentina --- Vô địch: Argentina"
-  - id: scenario_3
-    content:
-      France: winner
-      England: final
-    name: "Chung kết = France, England --- Vô địch: France"
-  - id: scenario_4
-    content:
-      France: final
-      England: winner
-    name: "Chung kết = France, England --- Vô địch: England"
   - id: scenario_5
     content:
       Spain: winner
