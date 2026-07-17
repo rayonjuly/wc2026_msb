@@ -239,7 +239,7 @@ def render_bracket():
                     <div class="trophy-space">🏆 CHAMPION</div>
                     <div class="match" style="width: 140px;">
                         {get_team_box("Spain", "final")}
-                        {get_team_box("FINALIST 2", "final")}
+                        {get_team_box("Argentina", "final")}
                     </div>
                 </div>
                 

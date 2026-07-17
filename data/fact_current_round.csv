@@ -1,6 +1,6 @@
 team,current_round,team_status
 Algeria,32_team,0
-Argentina,semi_final,1
+Argentina,final,1
 Australia,32_team,0
 Austria,32_team,0
 Belgium,quarter_final,0
@@ -15,7 +15,7 @@ Czech Republic,group_stage,0
 DR Congo,32_team,0
 Ecuador,32_team,0
 Egypt,16_team,0
-England,semi_final,1
+England,semi_final,0
 France,semi_final,0
 Germany,32_team,0
 Ghana,32_team,0
